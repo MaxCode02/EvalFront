@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ListEvenementComponent} from 'src/app/evenement/list-evenement/list-evenement.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddEvenementComponent } from './evenement/add-evenement/add-evenement.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ListEvenementComponent,
-    AppComponent
+    AppComponent,
+    AddEvenementComponent
     
   ],
   imports: [
@@ -18,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
