@@ -18,7 +18,7 @@ export class EventService {
 
 
   getAllEvents(): Observable<Event[]> {
-    return this.http.get<Event[]>(`${this.ApiUrl}/Events`);
+    return this.http.get<Event[]>(`${this.ApiUrl}/GetAllEvents`);
   }
 
 
