@@ -31,11 +31,10 @@ export class AddEvenementComponent implements OnInit {
       this.eventService.addEvent(this.eventForm.value).subscribe(
         (newEvent) => {
           console.log(newEvent)
-          this.router.navigate(['/evenement']); // Assurez-vous que le chemin correspond à votre configuration de routage
+          this.router.navigate(['/evenement']); 
         },
         (error) => {
           console.error(error);
-          // Affichez ici un message d'erreur à l'utilisateur
         }
       );
 }
