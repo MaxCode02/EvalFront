@@ -32,7 +32,13 @@ export class ListEvenementComponent implements OnInit {
   }
 
   deleteEvent(id: string) {
-    
-    
+    this.eventService.deleteEvent(id).subscribe(
+      () => {
+        this.events = this.events.filter(event => event.id !== id);
+      },
+      (error) => {
+        console.error('Error deleting event', error);
+      }
+    );
   }
 }

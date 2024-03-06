@@ -7,13 +7,15 @@ import {ListEvenementComponent} from 'src/app/evenement/list-evenement/list-even
 import { HttpClientModule } from '@angular/common/http';
 import { AddEvenementComponent } from './evenement/add-evenement/add-evenement.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UpdateEvenementComponent } from './evenement/update-evenement/update-evenement.component';
 
 
 @NgModule({
   declarations: [
     ListEvenementComponent,
     AppComponent,
-    AddEvenementComponent
+    AddEvenementComponent,
+    UpdateEvenementComponent
     
   ],
   imports: [
